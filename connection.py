@@ -39,16 +39,16 @@ def motor_forward():
     pi.write(motor_input2, 0)
     pi.write(motor_input3, 1)
     pi.write(motor_input4, 0)
-    pi.set_PWM_dutycycle(motor_enable, 255)  # PWM pour contrôler la vitesse
-    pi.set_PWM_dutycycle(motor_enable2, 255)
+    pi.set_PWM_dutycycle(motor_enable, 100)  # PWM pour contrôler la vitesse
+    pi.set_PWM_dutycycle(motor_enable2, 100)
 
 def motor_backward():
     pi.write(motor_input1, 0)
     pi.write(motor_input2, 1)
     pi.write(motor_input3, 0)
     pi.write(motor_input4, 1)
-    pi.set_PWM_dutycycle(motor_enable, 255)  # PWM pour contrôler la vitesse
-    pi.set_PWM_dutycycle(motor_enable2, 255)
+    pi.set_PWM_dutycycle(motor_enable, 100)  # PWM pour contrôler la vitesse
+    pi.set_PWM_dutycycle(motor_enable2, 100)
 
 def motor_stop():
     pi.write(motor_input1, 0)
@@ -63,16 +63,16 @@ def motor_left():
     pi.write(motor_input2, 0)
     pi.write(motor_input3, 0)
     pi.write(motor_input4, 1)
-    pi.set_PWM_dutycycle(motor_enable, 255)  # PWM pour contrôler la vitesse
-    pi.set_PWM_dutycycle(motor_enable2, 255)
+    pi.set_PWM_dutycycle(motor_enable, 100)  # PWM pour contrôler la vitesse
+    pi.set_PWM_dutycycle(motor_enable2, 100)
 
 def motor_right():
     pi.write(motor_input1, 0)
     pi.write(motor_input2, 1)
     pi.write(motor_input3, 1)
     pi.write(motor_input4, 0)
-    pi.set_PWM_dutycycle(motor_enable, 255)  # PWM pour contrôler la vitesse
-    pi.set_PWM_dutycycle(motor_enable2, 255)
+    pi.set_PWM_dutycycle(motor_enable, 100)  # PWM pour contrôler la vitesse
+    pi.set_PWM_dutycycle(motor_enable2, 100)
 
 # Initialisation du PCA9685
 pwm = Adafruit_PCA9685.PCA9685()
