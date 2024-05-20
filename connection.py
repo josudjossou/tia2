@@ -107,11 +107,11 @@ def on_message(client, userdata, msg):
     
     command = message.strip().lower()  # Convertir en minuscules et supprimer les espaces indésirables
     
-    if command == "haut":
+    if command == "bas":
         motor_forward()
     elif command == "stop":
         motor_stop()
-    elif command == "bas":
+    elif command == "haut":
         motor_backward()
     elif command == "gauche":
         motor_left()
