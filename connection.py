@@ -13,9 +13,10 @@ motor_input4 = 18
 motor_enable2 = 17
 
 # Configuration MQTT
-mqtt_broker_address = "192.168.137.191"  # Ton adresse IP MQTT
+mqtt_broker_address = "192.168.100.176"  # Ton adresse IP MQTT
 mqtt_port = 1883
 mqtt_user = "user1"
+
 mqtt_password = "2024"
 
 # Initialisation de pigpio
@@ -117,6 +118,7 @@ def on_message(client, userdata, msg):
     elif command == "droite":
         motor_right()
     elif command.startswith("servo"):
+        motor_stop()
         parts = command.split("servo")
         if len(parts) == 2:
             servo_id = int(parts[1][0])
