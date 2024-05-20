@@ -1,4 +1,4 @@
- from __future__ import division
+from __future__ import division
 import paho.mqtt.client as mqtt
 import pigpio
 import time
