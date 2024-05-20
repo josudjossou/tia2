@@ -118,7 +118,6 @@ def on_message(client, userdata, msg):
     elif command == "droite":
         motor_right()
     elif command.startswith("servo"):
-        motor_stop()
         parts = command.split("servo")
         if len(parts) == 2:
             servo_id = int(parts[1][0])
