@@ -123,6 +123,7 @@ def on_message(client, userdata, msg):
             servo_id = int(parts[1][0])
             angle = int(parts[1][1:])
             if 1 <= servo_id <= 5 and 0 <= angle <= 180:
+                motor_stop()
                 set_servo_angle(servo_channels[servo_id - 1], angle)
             else:
                 print("Identifiant de servo ou angle invalide.")
