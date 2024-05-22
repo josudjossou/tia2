@@ -13,7 +13,7 @@ motor_input4 = 18
 motor_enable2 = 17
 
 # Configuration MQTT
-mqtt_broker_address = "192.168.1.190"  # Ton adresse IP MQTT
+mqtt_broker_address = "192.168.100.176"  # Ton adresse IP MQTT
 mqtt_port = 1883
 mqtt_user = "user1"
 
